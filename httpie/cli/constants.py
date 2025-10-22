@@ -52,6 +52,8 @@ SEPARATOR_GROUP_DATA_EMBED_ITEMS = frozenset({
 SEPARATOR_GROUP_NESTED_JSON_ITEMS = frozenset([
     SEPARATOR_DATA_STRING,
     SEPARATOR_DATA_RAW_JSON,
+    SEPARATOR_DATA_EMBED_FILE_CONTENTS,
+    SEPARATOR_DATA_EMBED_RAW_JSON_FILE,
 ])
 
 # Separators allowed in ITEM arguments
@@ -123,3 +125,9 @@ class RequestType(enum.Enum):
     FORM = enum.auto()
     MULTIPART = enum.auto()
     JSON = enum.auto()
+
+
+OPEN_BRACKET = '['
+CLOSE_BRACKET = ']'
+BACKSLASH = '\\'
+HIGHLIGHTER = '^'
